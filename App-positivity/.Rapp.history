@@ -1,0 +1,311 @@
+install.packages(c("rj", "rj.gd"), repos="http://download.walware.de/rj-2.0")
+install.packages(c("rj", "rj.gd"), repos="http://download.walware.de/rj-2.0", type="source")
+plot(rnorm)
+3+2
+2+2
++2
+2+2
+boot.sem.mc <- function (data, model, R = 100, cov = cov, ...){#
+    refit <- function(){#
+        indices <- sample(N, N, replace = TRUE)#
+        S <- cov(data[indices, ])#
+        refitted.model <- sem(ram, S, N, coef.names, ...)#
+        refitted.model$coeff#
+    }
+exit
+}
+q()
+?mtext
+require
+require(xlsx)
+?read.xlsx
+?as.DAte
+?as.Date
+require(randomForest)
+?randomForest
+require(ROCR)
+?prediction
+require(ROCR)
+?prediction
+.lib.loc
+.lib.loc()
+.Library
+require(e1071)
+?svm
+remove.packages("SuperLearner")
+?mclapply
+require(parallel)
+?mclapply
+?invisible
+?mclapply
+require(parallel)
+sessionInfo()
+packageVersion("parallel")
+?parLapply
+remove.packages("SuperLearner")
+q()
+remove.packages("SuperLearner")
+q()
+install.packages("SuperLearner")
+require(SuperLearner)
+SL.rpart
+SL.rpartPrune
+require(rpart)
+rpart.control
+require(ipred)
+?ipredbagg
+require(parallel)
+?mclapply
+remove.packages("SuperLearner")
+require("quantreg")
+install.packages("quantreg")
+remove.packages("SuperLearner")
+require(SuperLearner)
+?SuperLearner
+require(SuperLearner)#
+options(mc.cores=8)
+## examples with multicore#
+set.seed(23432)#
+## training set#
+n <- 500#
+p <- 50#
+X <- matrix(rnorm(n*p), nrow = n, ncol = p)#
+colnames(X) <- paste("X", 1:p, sep="")#
+X <- data.frame(X)#
+Y <- rbinom(n, 1, plogis(X[, 1] + sqrt(abs(X[, 2] * X[, 3])) + X[, 2] - X[, 3] + rnorm(n)))#
+## test set#
+m <- 1000#
+newX <- matrix(rnorm(m*p), nrow = m, ncol = p)#
+colnames(newX) <- paste("X", 1:p, sep="")#
+newX <- data.frame(newX)#
+# generate Library and run Super Learner#
+SL.library <- c("SL.glm", "SL.randomForest", "SL.gam", "SL.polymars", "SL.mean")#
+testMC <- mcSuperLearner(Y = Y, X = X, newX = newX, SL.library = SL.library, method = "method.NNLS", family="binomial")
+?break
+?subset
+detectCores()
+require(parallel)
+detectCores()
+require(parallel)
+getOption("mc.cores", 2L)
+?try
+remove.packages('gbm')
+q9)
+q()
+require(ipred)
+?ipredbagg
+require(ltmle)
+?ltmle
+require(class)
+?knn
+require(glmnet)
+glmnet
+?glmnet
+remove.packages("SuperLearner")
+require(e1071)
+?svm
+require(gbm)
+?gbm
+require(parallel)
+?mclapply
+## Jeremy's simulation ###
+f.X = function(x) rnorm(n)#
+f.Y.x = function(x) 31.3 + 26.8*x + 1.6*x^2 - 2.2*x^3
+mu.Y.x = function(x) 31.3 + 26.8*x + 1.6*x^2 - 2.2*x^3#
+sigma_e = 21.2
+f.X = function(x) rnorm(n)#
+mu.Y.x = function(x) 31.3 + 26.8*x + 1.6*x^2 - 2.2*x^3#
+sigma_e = 21.2#
+f.Y.x = function(x) rnorm(length(x), mu.Y.x, sigma_e)
+n = 164#
+X = f.X(n)
+f.Y.x = function(x) rnorm(length(x), mu.Y.x(x), sigma_e)
+Y = f.Y.x(X)
+head(Y)
+plot(Y ~ X)
+plot(Y ~ X, xlim=c(-2.5,2.5), ylim=c(-25, 120))
+require(multcomp)
+data("cholesterol")
+names(cholesterol)
+head(cholesterol)
+head(cholesterol$trt)
+length(cholesterol$trt)
+require(FNN)
+require(SuperLearner)
+install.packages("FNN")
+SL.gam
+SL.stepAIC
+SL.bayesglm
+SL.polymars
+remove.packages("SuperLearner")
+require(ipred)
+?ipredbagg
+require(FNN)
+?knn.reg
+?gc
+require(ltmle)
+?ltmle
+require(ltmle)
+?ltmle
+require(SuperLearner)
+?SuperLearner
+remove.packages("ltmle")
+q()
+?weekdays
+?grep
+?grepexpr
+?gregexpr
+require(xlsx)
+?read.xlsx
+require(SuperLearner)
+SL.randomForest
+?mtext
+?randomForest
+require(randomForest)
+?randomForest
+?model.frame
+?colSums
+?lda
+?nlminb
+?t.test
+require(reshape)
+?reshape
+require(class)
+?knn
+?data.frame
+?post
+require(rpart)
+?post
+?postscript
+paperseize
+papersize
+option(papersize)
+getOption(papersize)
+getOption('papersize')
+?cor
+?mtext
+require(ShortRead)
+?readAligned
+?write.table
+require(ShortRead)
+?readAligned
+?substr
+?stringstr
+require(Iso)
+install.packages("Iso")
+?pava.sa
+require(Iso)
+?pava.sa
+X = dlnorm(seq(-10, 60, length.out = 500), 2, .6)
+length(X)
+X = dlnorm(seq(-10, 60, length.out = n), 2, .6)
+n = 10#
+X = dlnorm(seq(-10, 60, length.out = n), 2, .6)
+length(X)
+n = 10#
+sim.size = 1000#
+X.mean = rep(NA, sim.size)#
+#
+set.seed(1)#
+for(i in 1:sim.size) {#
+	X = dlnorm(seq(-10, 60, length.out = n), 2, .6)#
+	X.mean[i] = mean(X)#
+}
+hist(X.mean)
+head(X.mean)
+X
+plot(density(X.mean))
+n = 10#
+sim.size = 1000#
+X.mean = rep(NA, sim.size)#
+#
+set.seed(1)#
+for(i in 1:sim.size) {#
+	X = dlnorm(seq(-10, 60, length.out = n), 2, .6)#
+	X.mean[i] = mean(X)#
+}#
+#
+plot(density(X.mean))
+n = 5#
+sim.size = 1000#
+X.mean = rep(NA, sim.size)#
+#
+set.seed(1)#
+for(i in 1:sim.size) {#
+	X = dlnorm(seq(-10, 60, length.out = n), 2, .6)#
+	X.mean[i] = mean(X)#
+}#
+#
+plot(density(X.mean))
+X
+?png
+require(glmnet)
+?glmnet
+?all.vars
+?pch
+?pdf
+?points
+?legend
+?eps
+require(Biobase)
+?alignData
+words <- function(...) paste(substitute(list(...)))[-1]
+load.packages = words(grid, ShortRead, Biostrings, ggplot2, magrittr, ggplot2, RColorBrewer)#
+lapply(load.packages, require, character.only=T)
+?alignData
+?read.table
+require(polspline)
+?polymars
+?polyclass
+?rep
+rep(c(2,3,4), each=2)
+?main
+?title
+?glm
+?rbinom
+n = 2000#
+glm(rbinom(n, 1, .1) ~ -1 + rep(1,n), family=binomial, weight=rep(1,n))
+?glm
+?grid
+require(ltmle)
+?ltmle
+require(ltmle)
+?ltmle
+require(ltmle)
+require(splines)
+?ns
+requiree1071
+require(e1071)
+?svm
+?density
+?title
+?density
+require(polspline)
+?polymars
+require(SuperLearner)
+SL.polymars
+?polymars
+require(ltmle)
+?ltmle
+?density
+?plot.survfit
+?survfit
+require(survival)
+?survfit
+?grep
+?cor.test
+x = c(1,2,3)
+y = c(10,20,10)
+lm(y ~x)
+y = c(10,20,15)
+lm(y ~x)
+getwd()
+setwd("./Dropbox/Studies/positivity/")
+ls()
+rm(list=ls())
+package.skeleton(name="pilot")
+?package.skeleton
+package.skeleton(name="pilot", list=NULL)
+package.skeleton(name="pilot", environment = .GlobalEnv)
+?S3method
+?export

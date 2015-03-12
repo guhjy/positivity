@@ -1,0 +1,12 @@
+Package: positivity
+Version: 1.0
+License: Unlimited
+Title: Study on handling positivity violations
+Description: Testing.
+Author: Linh Tran
+Maintainer: Linh Tran <tranlm@berkeley.edu>
+Date: 2015-01-08
+Depends: R (>= 3.1.1), Hmisc, xtable
+VignetteBuilder: knitr
+Suggests: knitr, foreach, iterators, snow, doSNOW
+Description: This package simulates positivity violations in a longitudinal setting and tries out four different approaches at handling it. 1) Choose regimens where not a problem (eg switch immediately or never), 2) Dynamic regimes, eg switch as soon as you come in after your assigned time, 3) Joint (partially stochastic) intervention on both (i.e. leave visits random until time of assigned switch and then force someone to come in), 4) Dont adjust for the covariate causing the problem (ie dont adjust for whether a patient comes in). and could show that this might or might not cause a problem depending on whether coming to clinic has a direct effect on outcome not via switch.
